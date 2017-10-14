@@ -1,5 +1,8 @@
 package com.cmcc.kafkaTest;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 public class KafkaMesConstant {
 	public static final String SUCCESS_CODE = "00000";
     public static final String SUCCESS_MES = "成功";
@@ -15,4 +18,9 @@ public class KafkaMesConstant {
     public static final String KAFKA_NO_OFFSET_MES = "未查到返回数据的offset,联系相关技术人员";
     
     
+//    public static void main(String[] args) throws UnknownHostException{
+//    	InetAddress address = InetAddress.getLocalHost();
+//    	String host = address.getCanonicalHostName();
+//    	System.out.println(host);
+//    }
 }

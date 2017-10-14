@@ -25,7 +25,7 @@ public class KafkaProducerTest {
 	        String ifPartition = "0";
 	        Integer partitionNum = 3;
 	        String role = "test";//用来生成key
-	        Map<String,Object> res = kafkaProducer.sndMesForTemplate
+	        Map<String,Object> res = kafkaProducer.sendMesForTemplate
 	                (topic, value, ifPartition, partitionNum, role);
 	        
 	        System.out.println("测试结果如下：===============");

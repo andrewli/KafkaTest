@@ -20,7 +20,7 @@ public class KafkaProducerServer {
 	@Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 	
-	public Map<String,Object> sndMesForTemplate(String topic, Object value, String ifPartition, 
+	public Map<String,Object> sendMesForTemplate(String topic, Object value, String ifPartition, 
             Integer partitionNum, String role){
         String key = role+"-"+value.hashCode();
         String valueString = JSON.toJSONString(value);
