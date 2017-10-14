@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
    <!-- 定义consumer的参数 -->
-     <bean id="consumerProperties" class="java.util.HashMap">
+     <bean id="consumerConfig" class="java.util.HashMap">
          <constructor-arg>
              <map>
                  <entry key="bootstrap.servers" value="localhost:9091"/>
@@ -26,12 +26,12 @@
      <!-- 创建consumerFactory bean -->
      <bean id="consumerFactory" class="org.springframework.kafka.core.DefaultKafkaConsumerFactory">
          <constructor-arg>
-             <ref bean="consumerProperties"/>
+             <ref bean="consumerConfig"/>
          </constructor-arg>
      </bean>
      
      <!-- 实际执行消息消费的类 -->
-     <bean id="messageListernerConsumerService" class="com.cmcc.kafkaTest.consumers.KafkaConsumerServer"/>
+     <bean id="consumerMessageListerner" class="com.cmcc.kafkaTest.consumers.KafkaConsumerListenerServer"/>
      
      <!-- 消费者容器配置信息 -->
      <bean id="containerProperties_trade" class="org.springframework.kafka.listener.config.ContainerProperties">

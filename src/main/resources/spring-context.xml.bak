@@ -18,4 +18,9 @@
 </bean>
 <context:component-scan base-package="com.cmcc" />
 
+<!-- 
+<import resource="classpath:kafkaConsumer.xml" />
+<import resource="classpath:kafkaProducer.xml" />
+ -->
+
 </beans>
