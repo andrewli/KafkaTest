@@ -5,10 +5,10 @@ import org.apache.log4j.Logger;
 import org.springframework.kafka.listener.MessageListener;
 import org.springframework.stereotype.Component;
 
-@Component("messageListernerConsumerService")
-public class KafkaConsumerServer implements MessageListener<String, String>{
+@Component("consumerMessageListerner")
+public class KafkaConsumerListenerServer implements MessageListener<String, String>{
 	
-	protected final Logger LOG = Logger.getLogger("KafkaConsumerServer");
+	protected final Logger LOG = Logger.getLogger("KafkaConsumerListenerServer");
 
 	@Override
 	public void onMessage(ConsumerRecord<String, String> record) {
