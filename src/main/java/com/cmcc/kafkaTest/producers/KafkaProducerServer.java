@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.concurrent.ListenableFuture;
 
 import com.alibaba.fastjson.JSON;
-import com.cmcc.kafkaTest.KafkaMesConstant;
+import com.cmcc.kafkaTest.common.KafkaMesConstant;
 
 @Component("kafkaProducerServer")
 public class KafkaProducerServer {
