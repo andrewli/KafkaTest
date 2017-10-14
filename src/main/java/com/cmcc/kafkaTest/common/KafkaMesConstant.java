@@ -1,4 +1,4 @@
-package com.cmcc.kafkaTest;
+package com.cmcc.kafkaTest.common;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
