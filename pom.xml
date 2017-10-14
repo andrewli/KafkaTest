@@ -43,6 +43,13 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 
+		<!-- Redis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-redis</artifactId>
+			<version>1.4.3.RELEASE</version>
+		</dependency>
+
 		<!--zkclient -->
 		<dependency>
 			<groupId>com.github.sgroschupf</groupId>
@@ -87,7 +94,7 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.31</version>
 		</dependency>
-		
+
 		<!-- littlec -->
 		<dependency>
 			<groupId>com.cmcc.littlec</groupId>
