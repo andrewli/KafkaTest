@@ -8,7 +8,7 @@ public class Poetry {
 	private long authorId;
 	private String time;
 	private String type;
-	private String content;
+	private String detail;
 	private String translation;
 	public long getId() {
 		return id;
@@ -52,13 +52,13 @@ public class Poetry {
 	public void setType(String type) {
 		this.type = type;
 	}
-	public String getContent() {
-		return content;
+		public String getDetail() {
+		return detail;
 	}
-	public void setContent(String content) {
-		this.content = content;
+	public void setDetail(String detail) {
+		this.detail = detail;
 	}
-	public String getTranslation() {
+		public String getTranslation() {
 		return translation;
 	}
 	public void setTranslation(String translation) {

@@ -13,8 +13,8 @@ public interface PoetryMapper {
 	@Results({
 		@Result(property="poetryId", column="poetry_id"),
 		@Result(property="poetryName", column="poetry_name"),
-		@Result(property="authorName", column="author_id"),
-		@Result(property="authorId", column="author_name")
+		@Result(property="authorName", column="author_name"),
+		@Result(property="authorId", column="author_id")
 	})
 	Poetry getPoetryById(Long poetryId);
 
